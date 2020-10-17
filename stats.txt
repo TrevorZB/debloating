@@ -1,0 +1,75 @@
+
+
+Exploit.Python.PunBB.py:
+    Language: python
+    Type: Website attacker; SQL injector
+    Size: 4.1kB -> 1.5kB
+    VirusTotal: 15 -> 0
+    Debloating Techniques:
+        - Removed banner
+        - Removed print statements
+        - Removed sys.arg checks
+    Before Debloat Detected By:
+        Avast
+        Baidu
+        ESET-NOD32
+        Kaspersky
+        McAfee-GW-Edition
+        NANO-Antivirus
+        TrendMicro-HouseCall
+        ZoneAlarm by Check Point
+    After Debloat:
+        None
+
+
+Backdoor.Linux.Kokain
+    Language: shell script
+    Type: Linux Backdoor
+    Size: 4.3kB -> 2.6kB
+    VirusTotal: 24 -> 1
+    Debloating Techniques:
+        - Made static passed in arg
+        - Removed all echo statements to stdout
+        - Simplified conditional branches
+    Before Debloat Detected By:
+        Ad-Aware
+        ALYac
+        Avast
+        Baidu
+        DrWeb
+        eScan
+        FireEye
+        Jiangmin
+        MAX
+        Sophos ML
+        TrendMicro-HouseCall
+        Yandex
+    After Debloat Detected By:
+        Yandex
+
+
+Backdoor.Linux.Rootin.sh
+    Language: shell script
+    Type: Linux Backdoor
+    Size: 1.8kB -> 0.97kB
+    VirusTotal: 22 -> 2
+    Debloating Techniques:
+        - Removed all comments
+        - Removed error checking that just resulted in exiting
+        - Removed the error exiting function
+        - Removed useage checking
+        - Removed banner
+    Before Debloat Detected By:
+        AhnLab-V3
+        AVG
+        ClamAV
+        DrWeb
+        Jiangmin
+        Microsoft
+        Panda
+        Sangfor Engine Zero
+        Sophos ML
+        TrendMicro
+        VBA32
+    After Debloat Detected By:
+        ClamAV
