@@ -73,3 +73,27 @@ Backdoor.Linux.Rootin.sh
         VBA32
     After Debloat Detected By:
         ClamAV
+
+
+
+Backdoor.Python.RShell
+    Language: Python
+    Type: Trojan
+    Size: 2.4kB -> 1.4 kB
+    VirusTotal: 6 -> 1
+    Debloating Techniques:
+        - Removed all comments
+        - Removed print statements
+        - Removed error checking that just resulted in exiting
+        - Removed the error exiting function
+        - Removed useage checking
+        - Removed banner
+    Before Debloat Detected By:
+        Avast
+        AVG
+        Baidu
+        Cyren
+        DrWeb
+        ESET-NOD32
+    After Debloat Detected By:
+        NANO-Antivirus
