@@ -97,3 +97,32 @@ Backdoor.Python.RShell
         ESET-NOD32
     After Debloat Detected By:
         NANO-Antivirus
+
+
+RedKeeper-ransomware
+    Language: Python
+    Type: Ransomware
+    Size: 1.64kB -> 1.6 kB
+    VirusTotal: 4 -> 2
+    Debloating Techniques:
+        - Removed all comments
+        - Removed print statements
+        - Removed banner
+    Before Debloat Detected By:
+        AegisLab
+        Kaspersky
+        Qihoo-360
+        ZoneAlarm
+    After Debloat Detected By:
+        Kaspersky
+        ZoneAlarm
+
+
+
+Trojan.Java.Appkiller
+    Language: Java
+    Type: Trojan
+    Size: 2.8kB -> 2.1 kB
+    VirusTotal: 40 -> 14
+    Debloating Techniques:
+        - Removed all comments
