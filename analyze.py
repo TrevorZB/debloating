@@ -1,7 +1,7 @@
 import requests
 
 class Analyze:
-    def __init__(self, key, bloat_filename, debloat_filename, name, types, strats):
+    def __init__(self, key, bloat_filename, debloat_filename, name, types, strats,csv_file):
         self.bloat_filename = bloat_filename
         self.bloat_id = None
         self.bloat_resp = None
@@ -18,7 +18,8 @@ class Analyze:
         self.row = [''] * 9
         self.headers = {'x-apikey': key}
         self.base = 'https://www.virustotal.com/api/v3'
-        
+
+        self.csv = csv_file
 
     def analyze(self):
         r = self._analyze(self.bloat_filename)
@@ -28,7 +29,7 @@ class Analyze:
         r = self._analyze(self.debloat_filename)
         if r:
             self.debloat_id = r.json()['data']['id']
-    
+
     def _analyze(self, filename):
         f = open(filename, 'r')
         if not f:
@@ -46,7 +47,7 @@ class Analyze:
     def get_analysis(self):
         if not self.bloat_resp:
             self.bloat_resp = self._get_analysis(self.bloat_id)
-        
+
         if not self.debloat_resp:
             self.debloat_resp = self._get_analysis(self.debloat_id)
 
@@ -112,3 +113,10 @@ class Analyze:
         row[8] = debloat_detected
 
         return ','.join(row)
+
+
+    def append_csv(self):
+        row_data = self.get_csv_row()
+        with open(self.csv,'a') as file:
+            file.write(row_data)
+            file.write('\n')
