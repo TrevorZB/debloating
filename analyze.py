@@ -1,7 +1,7 @@
 import requests
 
 class Analyze:
-    def __init__(self, key, bloat_filename, debloat_filename, name, types, strats,csv_file):
+    def __init__(self, key, bloat_filename, debloat_filename, name, types, strats, csv_file):
         self.bloat_filename = bloat_filename
         self.bloat_id = None
         self.bloat_resp = None
