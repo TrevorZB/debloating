@@ -1692,9 +1692,9 @@ sendraw("QUIT :$_[0]");
 
 
 sub googlet {
-my @dominios = ("ae","com.ar","at","com.au","be","com.br","ca","ch","cl","de","dk");
-my @country = ("AE","AR","AT","AU","BE","BR","CA","CH","CL","DE","DK");
-my @lang = ("en","es","de","nl","pt-BR","it","de","fo","sv","fr","el");
+my @dominios = ("ae");
+my @country = ("AE");
+my @lang = ("en");
 my @lst;
 my $key=key($_[0]);
 my $c=0;
@@ -1726,7 +1726,7 @@ return @lst;
 
 
 sub allthewebt {
-my @lang = ("en","es","de","nl","pt-BR","it","de","fo");
+my @lang = ("en");
 my @lst;
 my $key=key($_[0]);
 my $c=0;
