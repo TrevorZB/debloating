@@ -14,3 +14,5 @@ xenotix,keylogger,removed conditional import;removed useage checks;removed error
 angst,ransomware,removed comments;specialized file targeting,15050,11204,0,0,,
 CryPy,ransomware,specialized file targeting;specialized drive targeting,10323,5647,3,3,Invincea;Microsoft;Sophos,Invincea;Microsoft;Sophos
 shellbot.ah,shellbot,specialized domain targeting,16047,13839,28,27,ALYac;AVG;Ad-Aware;AhnLab-V3;Arcabit;Avast;Avira;Baidu;BitDefender;CAT-QuickHeal;ClamAV;Cynet;ESET-NOD32;Emsisoft;FireEye;GData;Ikarus;K7AntiVirus;K7GW;MAX;MicroWorld-eScan;Microsoft;NANO-Antivirus;TotalDefense;TrendMicro;TrendMicro-HouseCall;VIPRE;Yandex,ALYac;AVG;Ad-Aware;AhnLab-V3;Arcabit;Avast;Avira;Baidu;BitDefender;CAT-QuickHeal;ClamAV;Cynet;ESET-NOD32;Emsisoft;FireEye;Fortinet;GData;Ikarus;MAX;MicroWorld-eScan;Microsoft;NANO-Antivirus;TotalDefense;TrendMicro;TrendMicro-HouseCall;VIPRE;Yandex
+Cyper,ransomware,specialized file targeting;general debloating techniques,6000,2500,17,9,,
+IRCBot.z,bot net,specialized DDOS attacks;general debloating techniques,64000,8000,32,29,,
